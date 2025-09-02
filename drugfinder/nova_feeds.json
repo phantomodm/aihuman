@@ -1,0 +1,93 @@
+{
+  "feeds": [
+    {
+      "name": "PubMed",
+      "script": "ingest_pubmed",
+      "params": {
+        "pubmed_query": "cancer",
+        "pubmed_max_results": 500,
+        "pubmed_email": "researcher@example.com"
+      },
+      "requires_deid": false,
+      "requires_schedule": false
+    },
+    {
+      "name": "ClinicalTrials",
+      "script": "ingest_clinicaltrials",
+      "requires_deid": false,
+      "params": {
+        "clinical_query": "oncology",
+        "clinical_max_results": 1000
+      },
+      "requires_schedule": false
+    },
+    {
+      "name": "gnomAD",
+      "script": "ingest_gnomad",
+      "params": {
+        "gnomad_chromosome": "1",
+        "gnomad_start_position": 1000000,
+        "gnomad_end_position": 1001000,
+        "gnomad_dataset": "gnomad_r3",
+        "gnomad_max_results": 100
+      },
+      "requires_deid": false,
+      "requires_schedule": false
+    },
+    {
+      "name": "WHO GHO",
+      "script": "ingest_who",
+      "params": {
+        "who_indicator": "MDG_0000000001",
+        "who_max_results": 200
+      },
+      "requires_deid": false,
+      "requires_schedule": false
+    },
+    {
+      "name": "FHIR_EHR",
+      "script": "ingest_fhir",
+      "enabled": true,
+      "requires_deid": true,
+      "requires_schedule": false
+    },
+    {
+      "name": "HL7_Labs",
+      "script": "ingest_hl7",
+      "enabled": true,
+      "requires_deid": true,
+      "requires_schedule": false
+
+    },
+    {
+      "name": "Medical_Imaging",
+      "script": "ingest_dicom",
+      "enabled": true,
+      "requires_deid": true,
+      "requires_schedule": false
+
+    },
+    {
+      "name": "1000Genomes",
+      "script": "ingest_1000genomes",
+      "enabled": true,
+      "requires_deid": false,
+      "requires_schedule": true
+    },
+    {
+      "module": "ingestion_feeds.ingest_dbsnp",
+      "requires_deid": false,
+      "requires_schedule": true
+    },
+    {
+      "module": "ingestion_feeds.ingest_clinvar",
+      "requires_deid": false,
+      "requires_schedule": true
+    },
+    {
+      "module": "ingestion_feeds.ingest_gwas",
+      "requires_deid": false,
+      "requires_schedule": true
+    }
+  ]
+}
