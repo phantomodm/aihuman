@@ -1,0 +1,12 @@
+# requirements.txt
+functions-framework
+numpy
+scikit-learn
+torch
+transformers
+pinecone
+google-cloud-storage==2.19.0
+firebase-admin==6.9.0 # For Firebase integration
+google-cloud-aiplatform==1.108.0 # For Vertex AI integration
+google-cloud-texttospeech # New for audio
+google-cloud-pubsub

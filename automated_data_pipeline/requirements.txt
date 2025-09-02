@@ -1,0 +1,7 @@
+# requirements.txt
+functions-framework
+numpy
+torch
+transformers
+pinecone
+google-cloud-storage

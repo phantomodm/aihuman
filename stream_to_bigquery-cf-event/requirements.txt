@@ -1,0 +1,13 @@
+functions-framework
+numpy
+scikit-learn
+torch
+transformers
+google-cloud-bigquery
+google-cloud-dataflow
+google-cloud-speech
+google-cloud-aiplatform
+google-cloud-texttospeech
+google-cloud-storage
+firebase-admin
+pinecone

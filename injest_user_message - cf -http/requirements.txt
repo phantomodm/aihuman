@@ -1,0 +1,3 @@
+functions-framework
+firebase-admin
+google-cloud-speech

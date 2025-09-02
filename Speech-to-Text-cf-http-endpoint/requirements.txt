@@ -1,0 +1,4 @@
+#requirements.txt
+functions-framework
+firebase-admin
+google-cloud-speech

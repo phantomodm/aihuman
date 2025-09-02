@@ -1,0 +1,7 @@
+# requirements.txt
+functions-framework
+numpy
+scikit-learn
+torch
+transformers
+google-cloud-storage
